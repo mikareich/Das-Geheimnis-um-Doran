@@ -1,0 +1,10 @@
+species,lives,mana,strength,speed,movement,resistance,inteliegence,meele,accuracy,special_attack
+magician,45,100,4,8,6,2,15,10,70,
+ranger,50,30,5,10,10,2,10,10,65,virer Feil
+whitch,55,80,4,9,11,2,13,11,60,
+barbar,90,20,9,6,7,4,8,70,20,Brüllen
+nekromant,75,40,5,9,8,2,14,13,65,"Nekromantie (beschwört ein Golem, der für den Nekromant kämpft)"
+thief,60,20,4,11,10,2,11,40,100,Wiederstand + 2
+assasine,60,30,4,11,11,1,10,50,70,Widerstand +2
+druid,100,30,6,5,6,3,9,55,15,Heilen
+paladin,45,10,9,14,9,2,12,20,65,Nakampf +2
