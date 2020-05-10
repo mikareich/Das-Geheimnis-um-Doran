@@ -6,8 +6,10 @@ body {
   font-size: 12pt;
   font-family: "Bree Serif", serif;
   background-color: #f0dcd2;
+  color: #252525;
 }
 
+/* Navigation */
 nav {
   padding: 10px 20px;
   display: flex;
@@ -40,4 +42,23 @@ nav a.nav--link-selected {
 nav a.nav--title {
   font-size: 15pt;
   margin-right: auto !important;
+}
+
+/* Main */
+
+main {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+/* Horizontal line */
+
+hr {
+  border-color: #252525;
+}
+
+/* Paragraph */
+
+p {
+  margin-left: 20px;
 }
