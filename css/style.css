@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-size: 12pt;
+  font-family: "Bree Serif", serif;
+  background-color: #f0dcd2;
+}
+
+nav {
+  padding: 10px 20px;
+  display: flex;
+  background-color: #995f45;
+}
+
+nav a.nav--link {
+  color: unset;
+  text-decoration: unset;
+  color: #e4e4e4;
+  transition: 200ms;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a.nav--link:not(:last-child) {
+  margin-right: 10px;
+}
+
+nav a.nav--link:hover,
+nav a.nav--link-selected {
+  background-color: #e4e4e498;
+  color: #252525;
+  text-decoration: underline;
+}
+
+nav a.nav--title {
+  font-size: 15pt;
+  margin-right: auto !important;
+}
