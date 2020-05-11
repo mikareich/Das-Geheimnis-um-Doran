@@ -1,6 +1,18 @@
 [
   {
-    "websitePath": ["/index.html", "/"],
-    "markdownPath": "/assets/content/Index.md"
+    "path": [
+      "/index.html",
+      "/"
+    ],
+    "name": "Home",
+    "dedicatedPath": "/assets/content/Index.md"
+  },
+  {
+    "name": "Charakterwahl",
+    "dedicatedPath": "/assets/content/Charakterwahl.md"
+  },
+  {
+    "name": "Regeln",
+    "dedicatedPath": "/assets/content/Regeln.md"
   }
 ]

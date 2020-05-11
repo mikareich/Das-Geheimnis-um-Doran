@@ -1,0 +1,22 @@
+{
+  "name": "das-geheimnis-um-doran",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikareich/Das-Geheimnis-um-Doran.git"
+  },
+  "author": "Mika Reich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikareich/Das-Geheimnis-um-Doran/issues"
+  },
+  "homepage": "https://github.com/mikareich/Das-Geheimnis-um-Doran#readme",
+  "dependencies": {
+    "markdown-converter": "^0.2.2"
+  }
+}

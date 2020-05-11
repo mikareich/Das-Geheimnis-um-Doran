@@ -3,5 +3,8 @@
   "useTabs": false,
   "trailingComma": "none",
   "semi": false,
-  "singleQuote": true
+  "singleQuote": true,
+  "printWidth": 80,
+  "proseWrap": "always",
+  "endOfLine": "lf"
 }

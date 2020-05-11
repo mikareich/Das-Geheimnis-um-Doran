@@ -1,65 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Das Geheimnis um Doran</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav>
-      <a href="/index.html" class="nav--link nav--title nav--link-selected"
-        >Das Geheimnis um Doran</a
-      >
-      <a href="/Charakterwahl.html" class="nav--link">Charackterwahl</a>
-      <a href="/Regeln.html" class="nav--link">Hilfe</a>
-    </nav>
-    <main id="content__contentWrapper">
-      <section id="einleitung">
-        <h1>Einleitung</h1>
-        <p>
-          Um das Spiel zu starten, klicke
-          <a href="./Charakterwahl.html">hier</a>. Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Nam deserunt, rem modi aut suscipit
-          saepe consectetur, labore dolorem id, minus laboriosam explicabo vitae
-          eveniet similique necessitatibus sequi iste dolor tempore! Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Sit vitae enim sequi
-          pariatur! Laudantium, reprehenderit doloremque. Recusandae debitis
-          praesentium dolor beatae quis suscipit? Nostrum quasi hic, tempora
-          error voluptatem incidunt.
-        </p>
-      </section>
-      <hr />
-      <section id="regeln">
-        <h1>Die Spielregeln</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
-          deserunt, rem modi aut suscipit saepe consectetur, labore dolorem id,
-          minus laboriosam explicabo vitae eveniet similique necessitatibus
-          sequi iste dolor tempore! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Sit vitae enim sequi pariatur! Laudantium,
-          reprehenderit doloremque. Recusandae debitis praesentium dolor beatae
-          quis suscipit? Nostrum quasi hic, tempora error voluptatem incidunt.
-        </p>
-      </section>
-      <hr />
-      <section id="regeln">
-        <h1>Unsere Tipps</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
-          deserunt, rem modi aut suscipit saepe consectetur, labore dolorem id,
-          minus laboriosam explicabo vitae eveniet similique necessitatibus
-          sequi iste dolor tempore! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Sit vitae enim sequi pariatur! Laudantium,
-          reprehenderit doloremque. Recusandae debitis praesentium dolor beatae
-          quis suscipit? Nostrum quasi hic, tempora error voluptatem incidunt.
-        </p>
-      </section>
-    </main>
-    <script src="./js/content.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Das Geheimnis um Doran</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="/" class="nav--link nav--title" data-SSR-link="nav--link-selected">Das Geheimnis um
+      Doran</a>
+    <a href="/?SSR=charakterwahl" class="nav--link" data-SSR-link="nav--link-selected">Charackterwahl</a>
+    <a href="/?SSR=regeln" class="nav--link" data-SSR-link="nav--link-selected">Regeln</a>
+  </nav>
+  <main id="SSR__contentWrapper">
+
+  </main>
+  <script src="./js/mdConverter.js"></script>
+  <script type="module" src="./js/app.js"></script>
+</body>
+
 </html>
