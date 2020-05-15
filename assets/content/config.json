@@ -6,7 +6,9 @@
     ],
     "name": "Home",
     "dedicatedPath": "/assets/content/Index.md",
-    "audio": "/assets/audio/Drama-music.mp3"
+    "audio": ["/assets/audio/Drama-music.mp3",
+               	"/assets/audio/prolog.m4a"
+              ]
   },
   {
     "name": "Charakterwahl",
