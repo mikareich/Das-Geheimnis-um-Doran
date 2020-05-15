@@ -1,7 +1,8 @@
 interface IConfiguration extends Object {
-  path: String | String[]
+  path?: String | String[]
   name?: String
   dedicatedPath: RequestInfo
+  audio?: string
 }
 
 export default class SSR {
@@ -11,6 +12,7 @@ export default class SSR {
   private SSRLinks: NodeListOf<HTMLAnchorElement>
   private name: string | null
   private path: string | null
+  private audioElement: HTMLAudioElement | null
   constructor(configFilePath: string) {
     this.wrapper = document.querySelector('#SSR__contentWrapper')
     this.configFilePath = configFilePath
@@ -18,6 +20,7 @@ export default class SSR {
     this.SSRLinks = document.querySelectorAll('[data-SSR-link]')
     this.name = this.getLinkedSSRName(window.location.href)
     this.path = window.location.pathname + window.location.search
+    this.audioElement = document.querySelector('audio#[data-SSR-audio]')
     this.printContent()
     if (this.SSRLinks.length !== 0) this.listenOnLinks()
   }
@@ -42,7 +45,6 @@ export default class SSR {
         config.path?.includes(this.path!) ||
         config.name?.toLocaleLowerCase() === this.name
     )
-    console.log(this.configuration)
     if (!match)
       return console.error(
         `[SSR]: Couldn't find any configuration'.
@@ -50,15 +52,19 @@ export default class SSR {
       )
     // fetch dedicated file
     let file: string = await (await fetch(match.dedicatedPath)).text()
+
     // convert dedicated file if necessary
     if (/.*.md$/.test(match.dedicatedPath.toString()))
       // @ts-ignore
       file = window.markdownit().render(file)
     // display content
     this.wrapper!.innerHTML = file
-
-    // update link
-    this.updateLinks()
+    // play audio
+    this.audioElement!.src = match.audio!
+    this.audioElement?.play()
+    if (match)
+      // update link
+      this.updateLinks()
   }
   private updateLinks() {
     console.log(this.path)

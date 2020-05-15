@@ -43,6 +43,7 @@ var SSR = /** @class */ (function () {
         this.SSRLinks = document.querySelectorAll('[data-SSR-link]');
         this.name = this.getLinkedSSRName(window.location.href);
         this.path = window.location.pathname + window.location.search;
+        this.audioElement = document.querySelector('audio#[data-SSR-audio]');
         this.printContent();
         if (this.SSRLinks.length !== 0)
             this.listenOnLinks();
@@ -69,44 +70,48 @@ var SSR = /** @class */ (function () {
         });
     };
     SSR.prototype.printContent = function () {
+        var _a;
         return __awaiter(this, void 0, void 0, function () {
             var match, file;
             var _this = this;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
+            return __generator(this, function (_b) {
+                switch (_b.label) {
                     case 0:
                         if (!!this.configuration) return [3 /*break*/, 2];
                         return [4 /*yield*/, this.setConfigutation()
                             // search dedicated path
                         ];
                     case 1:
-                        _a.sent();
-                        _a.label = 2;
+                        _b.sent();
+                        _b.label = 2;
                     case 2:
                         match = this.configuration.find(function (config) {
                             var _a, _b;
                             return ((_a = config.path) === null || _a === void 0 ? void 0 : _a.includes(_this.path)) ||
                                 ((_b = config.name) === null || _b === void 0 ? void 0 : _b.toLocaleLowerCase()) === _this.name;
                         });
-                        console.log(this.configuration);
                         if (!match)
                             return [2 /*return*/, console.error("[SSR]: Couldn't find any configuration'.\n         Please check the configuration file '" + this.configFilePath + "' and the given paths.")
                                 // fetch dedicated file
                             ];
                         return [4 /*yield*/, fetch(match.dedicatedPath)];
-                    case 3: return [4 /*yield*/, (_a.sent()).text()
+                    case 3: return [4 /*yield*/, (_b.sent()).text()
                         // convert dedicated file if necessary
                     ];
                     case 4:
-                        file = _a.sent();
+                        file = _b.sent();
                         // convert dedicated file if necessary
                         if (/.*.md$/.test(match.dedicatedPath.toString()))
                             // @ts-ignore
                             file = window.markdownit().render(file);
                         // display content
                         this.wrapper.innerHTML = file;
-                        // update link
-                        this.updateLinks();
+                        // play audio
+                        this.audioElement.src = match.audio;
+                        (_a = this.audioElement) === null || _a === void 0 ? void 0 : _a.play();
+                        if (match)
+                            // update link
+                            this.updateLinks();
                         return [2 /*return*/];
                 }
             });

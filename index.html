@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Das Geheimnis um Doran</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Das Geheimnis um Doran</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <nav>
-    <a href="/" class="nav--link nav--title" data-SSR-link="nav--link-selected">Das Geheimnis um
-      Doran</a>
-    <a href="/?SSR=charakterwahl" class="nav--link" data-SSR-link="nav--link-selected">Charackterwahl</a>
-    <a href="/?SSR=regeln" class="nav--link" data-SSR-link="nav--link-selected">Regeln</a>
-  </nav>
-  <main id="SSR__contentWrapper">
-
-  </main>
-  <script src="./js/mdConverter.js"></script>
-  <script type="module" src="./js/app.js"></script>
-</body>
-
+  <body>
+    <nav>
+      <a
+        href="/"
+        class="nav--link nav--title"
+        data-SSR-link="nav--link-selected"
+        >Das Geheimnis um Doran</a
+      >
+      <a
+        href="/?SSR=charakterwahl"
+        class="nav--link"
+        data-SSR-link="nav--link-selected"
+        >Charackterwahl</a
+      >
+      <a
+        href="/?SSR=regeln"
+        class="nav--link"
+        data-SSR-link="nav--link-selected"
+        >Regeln</a
+      >
+    </nav>
+    <main id="SSR__contentWrapper"></main>
+    <audio data-SSR-audio></audio>
+    <script src="./js/mdConverter.js"></script>
+    <script type="module" src="./js/app.js"></script>
+  </body>
 </html>
