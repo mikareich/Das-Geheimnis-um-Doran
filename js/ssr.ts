@@ -20,7 +20,7 @@ export default class SSR {
     this.SSRLinks = document.querySelectorAll('[data-SSR-link]')
     this.name = this.getLinkedSSRName(window.location.href)
     this.path = window.location.pathname + window.location.search
-    this.audioElement = document.querySelector('audio#[data-SSR-audio]')
+    this.audioElement = document.querySelector('audio[data-SSR-audio]')
     this.printContent()
     if (this.SSRLinks.length !== 0) this.listenOnLinks()
   }
