@@ -5,7 +5,8 @@
       "/"
     ],
     "name": "Home",
-    "dedicatedPath": "/assets/content/Index.md"
+    "dedicatedPath": "/assets/content/Index.md",
+    "audio": "/assets/audio/Drama-music.mp3"
   },
   {
     "name": "Charakterwahl",
