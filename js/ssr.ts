@@ -1,3 +1,5 @@
+import AudioService from './audioService.js'
+new AudioService('', false)
 interface IConfiguration extends Object {
   path?: String | String[]
   name?: String
