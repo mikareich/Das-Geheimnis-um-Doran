@@ -1,9 +1,9 @@
 # Inhaltsverzeichnis
 1. [Entscheide was als nächstes passiert](#Phase1)
 2. [Ein Ereignis geschieht!](#Phase2)
-    1. [Es kommt zum Kampf](# Phase2.1)
-    2. [Ihr seid bei einem Händler!](# Phase2.2)
-    3. [Level Aufstieg!](# Phase2.3)
+    1. [Es kommt zum Kampf](#Phase2.1)
+    2. [Ihr seid bei einem Händler!](#Phase2.2)
+    3. [Level Aufstieg!](#Phase2.3)
 
 ## Entscheide was als nächstes passiert! <a name="Phase1"></a>
 Some introduction text, formatted in heading 2 style
