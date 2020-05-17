@@ -17,7 +17,7 @@ Ein Ereignis kann plötzlich ohne Vorwarnung auftreten (eine Goblin springt aus 
 
 ---
 #### Es kommt zum Kampf! <a name="Phase2.1"></a>
-Ihr wolltet es so, oder seid in einen Hinterhalt gelangt? Ganz egal wie, ihr befindet euch nun direkt in einem Kampf um Leben-oder-Tod. Der Kampf endet, wenn ihr, oder die bösen Kreaturen das zeitliche segnen.
+Ihr wolltet es so, oder seid in einen Hinterhalt gelangt? Ganz egal wie, ihr befindet euch nun direkt in einem Kampf um Leben-oder-Tod. Der Kampf endet, wenn ihr, oder die bösen Kreaturen das zeitliche segnen. Gewinnt ihr den Kampf, könnt ihr die Leiche plündern. Vielleicht findet ihr etwas wertvolles?
 
 ---
 #### Ihr seid bei einem Händler! <a name="Phase2.2"></a>
