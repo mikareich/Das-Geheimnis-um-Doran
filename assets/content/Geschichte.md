@@ -8,6 +8,17 @@ Ihr habt euch entschieden, direkt und ohne Umwege in Richtung Westen aufzubreche
 
 >> WAS GLOTZT IHR SO? VERSCHWINDET ODER ICH SCHLITZ EUCH AUF IHR HÄSSLICHEN HERUMTREIBER! 
 
+[Weiter glotzen](#Weiterglotzen)
+
+[Schweigend an der Kreatur vorbei gehen](#vorbeigehen)
+
+
+
+Ihr glotzt weiter<a name="Weiterglotzen"></a>
+
+
+Schweigend an der Kreatur vorbei gehen<a name="vorbeigehen"></a>
+
 
 
 Ab zur Kaserne! <a name="Kaserne"></a>
